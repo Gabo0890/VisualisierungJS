@@ -22,8 +22,8 @@
     </a-entity>
 
 
-    <a-light id="licht" color="magenta" type="spot">
-        <a-animation attribtue="color" begin="5000" to="crimson"></a-animation>
+    <a-light id="licht" color="#FFFFFF" type="spot">
+        <a-animation attribtue="color" begin="5000" to="#808080"></a-animation>
     </a-light>
 <!-- es wird leider nur schwarz und ändert nicht die farbe -->
     <!--Haus-->
@@ -50,7 +50,7 @@
     </a-assets>
 
     <a-entity collada-model="#person1" position=" 0 0 -6.2" rotation="0 0 0" scale="0.75 0.75 0.75">
-        <a-animation  attribute="position" begin="click"  to="10 10 10"></a-animation>
+        <a-animation  attribute="rotation" begin="click"  to="-84 0 0"></a-animation>
     </a-entity>
 
     <!--Person 2-->
@@ -61,7 +61,9 @@
 
     </a-assets>
 
-    <a-entity collada-model="#person2" position=" -1 0 -6" rotation="0 18.3 0" scale="0.68 0.68 0.68"></a-entity>
+    <a-entity collada-model="#person2" position=" -1 0 -6" rotation="0 18.3 0" scale="0.68 0.68 0.68">
+        <a-animation  attribute="rotation" begin="click"  to="-84 0 0"></a-animation>
+    </a-entity>
 
     <!--Person 3-->
 
@@ -71,7 +73,9 @@
 
     </a-assets>
 
-    <a-entity collada-model="#person3" position=" 0.73 0 -4.3" rotation="0 -155 0" scale="1.21 1.21 1.21"></a-entity>
+    <a-entity collada-model="#person3" position=" 0.73 0 -4.3" rotation="0 -155 0" scale="1.21 1.21 1.21">
+        <a-animation  attribute="rotation" begin="click"  to="-84 0 0"></a-animation>       
+    </a-entity>
 
 
 </a-scene>
