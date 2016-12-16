@@ -1,0 +1,20 @@
+Das ist ein Projekt, welches eine Szene aus Brecht's Theaterstück "Der gute Mensch von Sezuan" darstellt. 
+Diese wird mit Hilfe von 3D Modellen nachgestellt und soll mit einer VR Brille sichtbar sein. 
+Die Szene wird mit Figuren aus der Zeichentrickserie "Die Simpsons" nachgestellt.
+
+Bei der Szene handelt es sich um die, in der Shen Te im Teppichladen des alten Ehepaars einen Schal kauft und sich das Geld für die Monatsmiete von dem Ehepaar annimmt.
+
+Probleme (stand 11.11.16):
+
+Lisa müsste noch einen Schal bekommen. (3d modellierung wird als letztes bearbeitet) 
+Geld müsste noch in die Hände bekommen. (siehe oben) 
+Die Kleidungen müsste evtl angepasst werden. (siehe oben) 
+Umwelt müsste ggf. angepasst werden. (skybox als beta vorhanden)
+
+was noch gemacht werden muss (stand 16.12.16)
+
+lichteffekte (dimmung des ganzen raumes, scheinen des geldes) 
+-kamerafahrt (dass die kamera mit onclick zwischen die interagierenden personen fährt, freie wahl der perspektive (in bezug auf interagierende personen)) 
+-soundeffekte (dialogstart, wenn kamera in position ist (wie oben erwähnt)) 
+-zeitliche komponente (alle oben genannten effekte sollen chronologisch ablaufen)) 
+-3d modellierung (für szenerie und darsteller)
