@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Der gute Mensch von Sezuan</title>
+        <meta name="description" content="Hello, World! - A-Frame">
+        <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+        <script src="https://aframe.io/releases/0.3.2/aframe-inspector.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+<--
+        <a-scene>
+            <a-camera position="20 20 20">
+                <a-cursor color="#FF0000">
+            </a-camera>
+         
+            <a-sky src="sky2.jpg"></a-sky>
+            <a-light id="licht" color="white" type="spot" intesity="1.0"></a-light>
+            <!--Haus-->
+            <a-assets >
+                <a-assets-items id="haus" src="VR/haus.dae">
+                </a-assets-items>
+            </a-assets>
+            <a-entity collada-model="#haus" position=" 0 0 -8 " rotation="0 -20 0" >
+                <a-animation target="#haus" attribute="rotation" begin="click"  to="-84 -20 0"></a-animation>
+            </a-entity>
+            <!--Person 1-->
+            <a-assets>
+                <a-assets-items id="person1" src="VR/person1.dae"></a-assets-items>
+            </a-assets>
+            <a-entity collada-model="#person1" position=" 0 0 -6.2" rotation="0 0 0" scale="0.75 0.75 0.75"></a-entity>
+            <!--Person 2-->
+            <a-assets>
+                <a-assets-items id="person2" src="VR/person2.dae"></a-assets-items>
+            </a-assets>
+            <a-entity collada-model="#person2" position=" -1 0 -6" rotation="0 18.3 0" scale="0.68 0.68 0.68"></a-entity>
+            <!--Person 3-->
+            <a-assets>
+                <a-assets-items id="person3" src="VR/person3.dae"></a-assets-items>
+            </a-assets>
+            <a-entity collada-model="#person3" position=" 0.73 0 -4.3" rotation="0 -155 0" scale="1.21 1.21 1.21"></a-entity>
+        </a-scene>
+-->
+      <!--      <a-scene>
+                <a-assets>
+                    <img id="texture" src="img/texture.jpg">
+                </a-assets>
+                <a-light id="licht" color="white" type="spot" intesity="1.0"></a-light>
+                <a-box color="red" width="1" height="1" depth="1"
+                       position="0 0 -10"
+                       rotation="45 45 45"
+                       scale="1 2.5 1"
+                       >
+                    <a-animation target="#licht" attribute="color" begin="click"  to="gray"></a-animation>
+                </a-box>
+                <a-camera position="20 20 20">
+                    <a-cursor color="#FF0000">
+                </a-camera>
+            </a-scene>
+            <script>
+                /*var box = document.querySelector( 'a-box' );
+                 box.addEventListener( 'mouseenter', function ( )
+                 {
+                 box.setAttribute( 'scale',
+                 {
+                 x: 4,
+                 y: 1,
+                 z: 6
+                 } );
+                 } );*/
+            </script>
+-->
+    </body>
+</html>
