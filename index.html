@@ -23,7 +23,7 @@
 
 
     <a-light id="licht" color="#FFFFFF" type="spot">
-        <a-animation attribtue="color" begin="140800" to="#808080"></a-animation>
+        <a-animation attribute="color" begin="140800" to="#808080"></a-animation>
     </a-light>
 <!-- es wird leider nur schwarz und ändert nicht die farbe -->
     <!--Haus-->
@@ -77,7 +77,19 @@
     <a-entity collada-model="#person3" position=" 0.73 0 -4.3" rotation="0 -155 0" scale="1.21 1.21 1.21">
         <a-animation  attribute="rotation" begin="click"  to="-84 0 0"></a-animation>       
     </a-entity>
+<!-- schal -->
+         <a-assets>
 
+        <a-assets-items id="money" src="vr/1e4q6cia46sg-Money/stacks%20of%20money.dae"></a-assets-items>
+
+    </a-assets>
+
+    <a-entity collada-model="#money" position=" 0 2 -5" rotation="0 0 0" scale="0.01 0.01 0.01" ><a-light id="cash" color="#FFFFF" type="spot" intensity="1">
+         <a-animation attribute="color" begin="5000" to="#2EFE2E"></a-animation>
+      <!--  <a-animation attribute="intensity" beginn="15000" to="3"></a-animation> -->
+         </a-light>   
+    </a-entity>
+ 
 
 </a-scene>
 
