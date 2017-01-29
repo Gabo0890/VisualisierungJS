@@ -17,7 +17,7 @@
     <a-sky color="#6495ED"></a-sky>
 
 
-    <a-entity camera="userHeight: 1.6" look-controls>
+    <a-entity camera="userHeight: 1.6" look-controls >
         <a-cursor color="#FF0000">
     </a-entity>
 
@@ -28,14 +28,15 @@
 <!-- es wird leider nur schwarz und ändert nicht die farbe -->
     <!--Haus-->
 
-    <a-assets >
-        <a-assets-items id="haus" src="haus.dae">
+    <a-assets>
+         
+        <a-assets-items id="haus" src="vr/haus.dae">
 
         </a-assets-items>
     </a-assets>
 
 
-    <a-entity collada-model="#haus" position=" 0 0 -8 " rotation="0 -20 0" >
+    <a-entity collada-model="#haus" position=" 0 0 -8 " rotation="0 -20 0">
 
         <a-animation  attribute="rotation" begin="click"  to="-84.44 -20.00 0.00"></a-animation>
 
@@ -44,12 +45,12 @@
     <!--Person 1-->
 
     <a-assets>
-
-        <a-assets-items id="person1" src="person1.dae"></a-assets-items>
+<audio id="song"  src="Elbueno.mp3"></audio>
+        <a-assets-items id="person1" src="vr/person1.dae"></a-assets-items>
 
     </a-assets>
 
-    <a-entity collada-model="#person1" position=" 0 0 -6.2" rotation="0 0 0" scale="0.75 0.75 0.75">
+    <a-entity collada-model="#person1" position=" 0 0 -6.2" rotation="0 0 0" scale="0.75 0.75 0.75" sound="src: #song; on: click">
         <a-animation  attribute="rotation" begin="click"  to="-84 0 0"></a-animation>
     </a-entity>
 
@@ -57,7 +58,7 @@
 
     <a-assets>
 
-        <a-assets-items id="person2" src="person2.dae"></a-assets-items>
+        <a-assets-items id="person2" src="vr/person2.dae"></a-assets-items>
 
     </a-assets>
 
@@ -69,7 +70,7 @@
 
     <a-assets>
 
-        <a-assets-items id="person3" src="person3.dae"></a-assets-items>
+        <a-assets-items id="person3" src="vr/person3.dae"></a-assets-items>
 
     </a-assets>
 
@@ -87,24 +88,17 @@
               <img id="texture" src="img/texture.jpg">
           </a-assets>
           <a-light id="licht" color="white" type="spot" intesity="1.0"></a-light>
-
           <a-box color="red" width="1" height="1" depth="1"
                  position="0 0 -10"
                  rotation="45 45 45"
                  scale="1 2.5 1"
                  >
-
               <a-animation target="#licht" attribute="color" begin="click"  to="gray"></a-animation>
-
-
           </a-box>
-
           <a-camera position="20 20 20">
               <a-cursor color="#FF0000">
           </a-camera>
       </a-scene>
-
-
       <script>
           /*var box = document.querySelector( 'a-box' );
            box.addEventListener( 'mouseenter', function ( )
