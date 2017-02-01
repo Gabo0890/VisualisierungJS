@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Der gute Mensch von Sezuan</title>
     <meta name="description" content="Hello, World! - A-Frame">
-    <script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
-    <script src="https://aframe.io/releases/0.4.0/aframe-inspector.min.js"></script>
+    <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.3.2/aframe-inspector.min.js"></script>
     <script src="scriptvr.js"></script>
 </head>
 <body>
@@ -15,15 +15,13 @@
 <a-scene>
 
     <a-sky color="black">
-        <!--<a-animation attribute="color" begin="80000" to="black"></a-animation>-->
     </a-sky>
 
-
-    <a-entity camera="userHeight: 2.1" look-controls position="0 0 2.77">
-        <!--<a-animation attribute="position" begin="3000" to="0 1.6 -0.5"></a-animation>-->
-        <!--<a-cursor color="#FF0000">-->
+    <a-entity camera="userHeight: 2.1" look-controls position="0 0 2.77" id="camera">
+        <a-cursor></a-cursor>
     </a-entity>
 
+    <a-sound src="src: url(Tonspur.mp3)" autoplay="true" position="0 2 -3"></a-sound>
 
     <a-light id="licht" color="#FFFFFF" type="spot" position="0 9.20 11.62" rotation="-84.22 0 0">
         <a-animation attribute="color" begin="58000" to="#808080"></a-animation>
@@ -34,7 +32,6 @@
     <a-light id="licht" color="#FFFFFF" type="spot" position="-13.19 5.61 4.5" rotation="-7.45 0 0">
         <a-animation attribute="color" begin="58000" to="#808080"></a-animation>
     </a-light>
-    <!-- es wird leider nur schwarz und ändert nicht die farbe -->
 
     <!--Tor-->
 
@@ -75,7 +72,6 @@
     </a-assets>
 
     <a-entity collada-model="#Teppichladen" position="0.14 1 -8.98" rotation="0 -20 0" scale="0.7 0.7 0.7">
-
     </a-entity>
 
     <!--Juwelier-->
@@ -101,11 +97,10 @@
     <!--Person 1-->
 
     <a-assets>
-        <audio id="song"  src="Tonspur.mp3"></audio>
         <a-assets-items id="person1" src="person1.dae"></a-assets-items>
     </a-assets>
 
-    <a-entity collada-model="#person1" position=" 0 1 -6.2" rotation="0 0 0" scale="0.75 0.75 0.75" sound="src: #song; autoplay: true">
+    <a-entity collada-model="#person1" position=" 0 1 -6.2" rotation="0 0 0" scale="0.75 0.75 0.75">
 
         <a-animation  attribute="position" begin="55000"  to="0 1 -4.77"></a-animation>
         <a-animation  attribute="position" begin="56500"  to="0 1 -6.2"></a-animation>
@@ -155,6 +150,7 @@
     </a-assets>
 
     <a-entity collada-model="#stuhl1" position=" 0 0 2.77" rotation="0 180 0">
+        <a-animation target="#camera" begin="click" attribute="position" to="0 2.1 2.77"></a-animation>
     </a-entity>
 
     <!--Stuhl 2 HIER KAMERASPRUNG-->
@@ -164,6 +160,7 @@
     </a-assets>
 
     <a-entity collada-model="#stuhl2" position=" 6 0 2.77" rotation="0 180 0" >
+        <a-animation target="#camera" begin="click" attribute="position" to="6 2.1 2.77"></a-animation>
     </a-entity>
 
     <!--Stuhl 3 HIER KAMERASPRUNG-->
@@ -173,6 +170,7 @@
     </a-assets>
 
     <a-entity collada-model="#stuhl3" position=" -6 0 2.77" rotation="0 180 0" >
+        <a-animation target="#camera" begin="click" attribute="position" to="-6 2.1 2.77"></a-animation>
     </a-entity>
 
 </a-scene>
