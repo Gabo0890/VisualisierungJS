@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Der gute Mensch von Sezuan</title>
     <meta name="description" content="Hello, World! - A-Frame">
-    <script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
-    <script src="https://aframe.io/releases/0.4.0/aframe-inspector.min.js"></script>
+    <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.3.2/aframe-inspector.min.js"></script>
     <script src="scriptvr.js"></script>
 </head>
 <body>
@@ -24,13 +24,13 @@
     <a-sound src="src: url(Tonspur.mp3)" autoplay="true" position="0 2 -3"></a-sound>
 
     <a-light id="licht" color="#FFFFFF" type="spot" position="0 9.20 11.62" rotation="-84.22 0 0">
-        <a-animation attribute="color" begin="58000" to="#808080"></a-animation>
+        <a-animation attribute="color" begin="63000" to="#808080"></a-animation>
     </a-light>
     <a-light id="licht" color="#FFFFFF" type="spot" position="10.76  5.61 4.5" rotation="-7.45 0 0">
-        <a-animation attribute="color" begin="58000" to="#808080"></a-animation>
+        <a-animation attribute="color" begin="63000" to="#808080"></a-animation>
     </a-light>
     <a-light id="licht" color="#FFFFFF" type="spot" position="-13.19 5.61 4.5" rotation="-7.45 0 0">
-        <a-animation attribute="color" begin="58000" to="#808080"></a-animation>
+        <a-animation attribute="color" begin="63000" to="#808080"></a-animation>
     </a-light>
 
     <!--Tor-->
@@ -41,7 +41,7 @@
 
     <a-entity collada-model="#schrift" position="0 1 0" >
         <a-animation  attribute="position" begin="3000"  to="15 1 0"></a-animation>
-        <a-animation  attribute="position" begin="83000"  to="0 1 0"></a-animation>
+        <a-animation  attribute="position" begin="88000"  to="0 1 0"></a-animation>
     </a-entity>
 
     <!--Tor mit Schrift-->
@@ -52,7 +52,7 @@
 
     <a-entity collada-model="#ohneschrift" position="0 1 0">
         <a-animation  attribute="position" begin="3000"  to="-15 1 0"></a-animation>
-        <a-animation  attribute="position" begin="83000"  to="0 1 0"></a-animation>
+        <a-animation  attribute="position" begin="88000"  to="0 1 0"></a-animation>
     </a-entity>
 
     <!--Bühne-->
@@ -102,9 +102,9 @@
 
     <a-entity collada-model="#person1" position=" 0 1 -6.2" rotation="0 0 0" scale="0.75 0.75 0.75">
 
-        <a-animation  attribute="position" begin="55000"  to="0 1 -4.77"></a-animation>
-        <a-animation  attribute="position" begin="56500"  to="0 1 -6.2"></a-animation>
-        <a-animation  attribute="rotation" begin="58000"  to="-84 0 0"></a-animation>
+        <a-animation  attribute="position" begin="60000"  to="0 1 -4.77"></a-animation>
+        <a-animation  attribute="position" begin="61500"  to="0 1 -6.2"></a-animation>
+        <a-animation  attribute="rotation" begin="63000"  to="-84 0 0"></a-animation>
     </a-entity>
 
     <!--Person 2-->
@@ -114,7 +114,7 @@
     </a-assets>
 
     <a-entity collada-model="#person2" position=" -1 1 -6" rotation="0 18.3 0" scale="0.68 0.68 0.68">
-        <a-animation  attribute="rotation" begin="58000"  to="-84 0 0"></a-animation>
+        <a-animation  attribute="rotation" begin="63000"  to="-84 0 0"></a-animation>
 
     </a-entity>
 
@@ -125,8 +125,8 @@
     </a-assets>
 
     <a-entity collada-model="#person3" position=" 0.73 1 -4.3" rotation="0 -155 0" scale="1.21 1.21 1.21">
-        <a-animation attribute="rotation" begin="70000" to="0 -6.3 0"></a-animation>
-        <a-animation attribute="position" begin="70000" to="0.57 1 -4.3"></a-animation>
+        <a-animation attribute="rotation" begin="75000" to="0 -6.3 0"></a-animation>
+        <a-animation attribute="position" begin="75000" to="0.57 1 -4.3"></a-animation>
     </a-entity>
 
     <!--Geld-->
@@ -136,13 +136,14 @@
     </a-assets>
 
     <a-entity collada-model="#Geld" position="-0.59 1.83 -5.54" rotation="0 0 0" scale="2 2 2">
-        <a-animation attribute="position" begin="55000" to="-0.26 1.83 -3.97"></a-animation>
+        <a-animation attribute="position" begin="60000" to="-0.26 1.83 -3.97"></a-animation>
         <a-light id="cash" rotation="-47.56 0 0" position="0 1.5 0" color="#FFFFF" type="spot" intensity="1">
-            <a-animation attribute="color" begin="11000" to="#2EFE2E"></a-animation>
+            <a-animation attribute="color" begin="16000" to="#2EFE2E"></a-animation>
 
             </a-light>
     </a-entity>
 
+    <!--Kamerasprung optional-->
     <!--Stuhl 1 HIER KAMERASPRUNG-->
 
     <a-assets>
@@ -150,7 +151,6 @@
     </a-assets>
 
     <a-entity collada-model="#stuhl1" position=" 0 0 2.77" rotation="0 180 0">
-        <a-animation target="#camera" begin="click" attribute="position" to="0 2.1 2.77"></a-animation>
     </a-entity>
 
     <!--Stuhl 2 HIER KAMERASPRUNG-->
@@ -160,7 +160,6 @@
     </a-assets>
 
     <a-entity collada-model="#stuhl2" position=" 6 0 2.77" rotation="0 180 0" >
-        <a-animation target="#camera" begin="click" attribute="position" to="6 2.1 2.77"></a-animation>
     </a-entity>
 
     <!--Stuhl 3 HIER KAMERASPRUNG-->
@@ -170,7 +169,6 @@
     </a-assets>
 
     <a-entity collada-model="#stuhl3" position=" -6 0 2.77" rotation="0 180 0" >
-        <a-animation target="#camera" begin="click" attribute="position" to="-6 2.1 2.77"></a-animation>
     </a-entity>
 
 </a-scene>
