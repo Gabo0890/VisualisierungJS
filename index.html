@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Der gute Mensch von Sezuan</title>
     <meta name="description" content="Hello, World! - A-Frame">
-    <script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
-    <script src="https://aframe.io/releases/0.4.0/aframe-inspector.min.js"></script>
+    <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.3.2/aframe-inspector.min.js"></script>
     <script src="scriptvr.js"></script>
 </head>
 <body>
@@ -17,11 +17,11 @@
     <a-sky color="black">
     </a-sky>
 
-    <a-entity look-controls position="0 2 4.77" id="camera">
+    <a-entity camera look-controls position="0 2 3" id="camera">
         <a-cursor></a-cursor>
     </a-entity>
 
-    <a-sound src="src: url(Tonspur.mp3)" autoplay="true" volume="10" position="0 2 -3" ></a-sound>
+    <a-sound src="src: url(Tonspur.mp3)" autoplay="true" position="0 2 -3"></a-sound>
 
     <a-light id="licht" color="#FFFFFF" type="spot" position="0 9.20 11.62" rotation="-84.22 0 0">
         <a-animation attribute="color" begin="63000" to="#808080"></a-animation>
