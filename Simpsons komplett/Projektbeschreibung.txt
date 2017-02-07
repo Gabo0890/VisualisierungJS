@@ -23,4 +23,4 @@ lichteffekte (dimmung des ganzen raumes, scheinen des geldes)
 Probleme (stand 07.02.17)
 
 -Kamerawechsel bei Klick auf Stuhl.
--evtl. Vorhang wieder hinzufügen
+-evtl. Vorhang wieder hinzufügen (neu modelieren)
