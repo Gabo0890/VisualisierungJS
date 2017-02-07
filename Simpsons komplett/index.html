@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Der gute Mensch von Sezuan</title>
+    <meta name="description" content="Hello, World! - A-Frame">
+    <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.3.2/aframe-inspector.min.js"></script>
+    <script src="scriptvr.js"></script>
+</head>
+<body>
+
+
+
+<a-scene>
+
+    <a-sky color="black">
+    </a-sky>
+
+    <a-entity position="0 0.6 3">
+        <a-camera wasd-controlls></a-camera>
+        <a-cursor></a-cursor>
+    </a-entity>
+
+    <a-sound src="src: url(Tonspur.mp3)" volume="20" autoplay="true" position="0 2 -3"></a-sound>
+
+    <a-light id="licht" color="#FFFFFF" type="spot" position="0 9.20 11.62" rotation="-57.9 0 0">
+        <a-animation attribute="color" begin="63000" to="#808080"></a-animation>
+    </a-light>
+
+
+    <!--Bühne-->
+
+    <a-assets>
+        <a-assets-items id="Theater" src="Allezusammen.dae"></a-assets-items>
+    </a-assets>
+
+    <a-entity collada-model="#Theater" position="0 0 0" rotation="0 0 0" >
+
+    </a-entity>
+
+    <!--Person 1-->
+
+    <a-assets>
+        <a-assets-items id="person1" src="person1.dae"></a-assets-items>
+    </a-assets>
+
+    <a-entity collada-model="#person1" position=" 0 0.5 -3.2" rotation="0 0 0" scale="0.75 0.75 0.75">
+
+        <a-animation  attribute="position" begin="60000"  to="0 0.5 -1.77"></a-animation>
+        <a-animation  attribute="position" begin="61500"  to="0 0.5 -3.2"></a-animation>
+        <a-animation  attribute="rotation" begin="63000"  to="-84 0 0"></a-animation>
+    </a-entity>
+
+    <!--Person 2-->
+
+    <a-assets>
+        <a-assets-items id="person2" src="person2.dae"></a-assets-items>
+    </a-assets>
+
+    <a-entity collada-model="#person2" position=" -1 0.5 -3" rotation="0 18.3 0" scale="0.68 0.68 0.68">
+        <a-animation  attribute="rotation" begin="63000"  to="-84 0 0"></a-animation>
+
+    </a-entity>
+
+    <!--Person 3-->
+
+    <a-assets>
+        <a-assets-items id="person3" src="person3.dae"></a-assets-items>
+    </a-assets>
+
+    <a-entity collada-model="#person3" position=" 0.73 0.5 -1.3" rotation="0 -155 0" scale="1.21 1.21 1.21">
+        <a-animation attribute="rotation" begin="75000" to="0 -6.3 0"></a-animation>
+        <a-animation attribute="position" begin="75000" to="0.57 0.5 -1.3"></a-animation>
+    </a-entity>
+
+    <!--Geld-->
+
+     <a-assets>
+        <a-assets-items id="Geld" src="Geld.dae"></a-assets-items>
+    </a-assets>
+
+    <a-entity collada-model="#Geld" position="-0.59 1.33 -2.54" rotation="0 0 0" scale="2 2 2">
+        <a-animation attribute="position" begin="60000" to="-0.26 1.33 -0.97"></a-animation>
+        <a-light id="cash" rotation="-47.56 0 0" position="0 1.5 0" color="#FFFFF" type="spot" intensity="1">
+            <a-animation attribute="color" begin="16000" to="#2EFE2E"></a-animation>
+
+            </a-light>
+    </a-entity>
+
+    <!--Kamerasprung optional-->
+    <!--Stuhl 1 HIER KAMERASPRUNG-->
+
+    <a-assets>
+        <a-assets-items id="stuhl1" src="stuhl.dae"></a-assets-items>
+    </a-assets>
+
+    <a-entity collada-model="#stuhl1" position=" 0 0 2.77" rotation="0 180 0">
+    </a-entity>
+
+    <!--Stuhl 2 HIER KAMERASPRUNG-->
+
+    <a-assets>
+        <a-assets-items id="stuhl2" src="stuhl.dae"></a-assets-items>
+    </a-assets>
+
+    <a-entity collada-model="#stuhl2" position=" 6 0 -1" rotation="0 -135 0" >
+    </a-entity>
+
+    <!--Stuhl 3 HIER KAMERASPRUNG-->
+
+    <a-assets>
+        <a-assets-items id="stuhl3" src="stuhl.dae"></a-assets-items>
+    </a-assets>
+
+    <a-entity collada-model="#stuhl3" position=" -6 0 -1" rotation="0 135 0" >
+    </a-entity>
+
+</a-scene>
+
+
+</body>
+</html>
