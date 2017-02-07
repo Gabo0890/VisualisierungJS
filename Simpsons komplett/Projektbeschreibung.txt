@@ -22,4 +22,4 @@ lichteffekte (dimmung des ganzen raumes, scheinen des geldes)
 --------------------------
 Probleme (stand 07.02.17)
 
--Kamerawechsel bei Klick auf Stuhl
+-Kamerawechsel bei Klick auf Stuhl.
